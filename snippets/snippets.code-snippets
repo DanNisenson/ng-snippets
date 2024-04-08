@@ -1,0 +1,30 @@
+{
+  "Angular input": {
+    "prefix": "input",
+    "body": ["@Input() $1"]
+  },
+  "Angular input - required": {
+    "prefix": "input-r",
+    "body": ["@Input({ required: true }) $1"]
+  },
+  "Angular output": {
+    "prefix": "output",
+    "body": ["@Output() $1 = new EventEmitter()"]
+  },
+  "Angular signal": {
+    "prefix": "signal",
+    "body": ["${1:prop} = signal(${2:init})"]
+  },
+  "Angular computed signal": {
+    "prefix": "computed",
+    "body": ["${1:prop} = computed(() => ${2:return})"]
+  },
+
+  "Toastr service": {
+    "prefix": "toastr",
+    "body": [
+      "import { ToastrService } from 'ngx-toastr'",
+      "private readonly toastr = inject(ToastrService)"
+    ]
+  }
+}
